@@ -1,6 +1,10 @@
 """
 MNIST data: load from files into Dataset structs.
-Based on python-mnist or was it mnist-python?
+
+Based on Richard Marko's https://github.com/sorki/python-mnist
+which needed some tweaking for faster loading; as long as I'm
+making changes, I stripped out stuff I don't need and changed
+the API.
 """
 
 from array import array
