@@ -1,2 +1,1 @@
-# ml-fumbling
-Phlogisticosh. Rhomothriglyph. Floof.
+Just messing around catching up with machine learning.
