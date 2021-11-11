@@ -1,0 +1,4 @@
+Needed setup:
+
+1. Grab the four files from http://yann.lecun.com/exdb/mnist/
+2. Decompress them into data/
