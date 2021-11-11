@@ -49,7 +49,7 @@ class MNIST(object):
         self.test_img_fname = 't10k-images-idx3-ubyte'
         self.test_lbl_fname = 't10k-labels-idx1-ubyte'
         self.training_set = None
-        self.validation_set = None
+        self.dev_set = None
         self.test_set = None
 
     @property
@@ -58,9 +58,9 @@ class MNIST(object):
         return self.training_set
 
     @property
-    def validation(self):
+    def dev(self):
         self.load_training()
-        return self.validation_set
+        return self.dev_set
 
     @property
     def test(self):
@@ -73,8 +73,8 @@ class MNIST(object):
                                      os.path.join(self.path, self.train_lbl_fname))
         assert len(examples) == len(labels)
         n = 50000
-        self.training_set   = Dataset(examples[:n], labels[:n])
-        self.validation_set = Dataset(examples[n:], labels[n:])
+        self.training_set = Dataset(examples[:n], labels[:n])
+        self.dev_set      = Dataset(examples[n:], labels[n:])
 
     def load_testing(self):
         if self.test_set is not None: return
