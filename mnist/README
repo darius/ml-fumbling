@@ -4,3 +4,6 @@ Needed setup:
 2. Decompress them into data/
 
 The code uses python3, numpy, matplotlib
+
+We're generally following http://neuralnetworksanddeeplearning.com/
+and its example code, at least to start.
